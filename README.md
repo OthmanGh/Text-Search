@@ -1,8 +1,20 @@
-# React + Vite
+# React + Vite Project Structure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This document provides an overview of the folder structure for a React + Vite project.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Clone the repository** (if applicable):
+
+   ```bash
+   git clone https://github.com/OthmanGh/Text-Search.git
+   cd Text-Search
+   ```
+
+## Install dependencies:
+
+- npm install
+
+## Start the development server:
+
+- npm run dev
