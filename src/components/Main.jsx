@@ -1,7 +1,7 @@
 import Article from './Article';
 
 const Main = ({ articles, searchQuery }) => {
-  if (articles.length === 0) return <h1>No Article found...</h1>;
+  if (articles.length === 0) return <h1 className="text-red-900 font-bold text-xl">No Post found...</h1>;
 
   return (
     <div className="h-full w-full ">
