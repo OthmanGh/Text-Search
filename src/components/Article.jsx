@@ -1,5 +1,5 @@
-import { highlightText, formatDate } from '../utils/helper';
-
+import { formatDate } from '../utils/helper';
+import { highlightText } from '../utils/highlightText';
 const Article = ({ article, searchQuery }) => {
   const highlightedTitle = highlightText(article.title, searchQuery);
   const highlightedContent = highlightText(article.content, searchQuery);
