@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
 import { articles as dummyArticles } from './constants';
+import './index.css';
 
 const App = () => {
   const [articles, setArticles] = useState(dummyArticles);
