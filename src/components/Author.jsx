@@ -1,7 +1,7 @@
 const Author = () => {
   return (
-    <div>
-      <strong>bitsofcode </strong>. Articles on Frontend Development. All articles are written by <em>Ire Aderinokun</em>, Frontend Developer and User Interface
+    <div className="w-[520px] bg-transparent px-6 py-4 rounded-sm border-slate-600 border-2">
+      <strong>bitsofcode </strong>. Articles on Frontend Development. All articles are written by <u>Ire Aderinokun</u>, Frontend Developer and User Interface
       Designer.
     </div>
   );

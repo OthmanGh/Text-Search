@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
 import { articles as dummyArticles } from './constants';
-import './index.css';
+import Author from './components/Author';
 
 const App = () => {
   const [articles, setArticles] = useState(dummyArticles);
@@ -12,8 +12,11 @@ const App = () => {
     searchQuery.length > 0 ? articles.filter((article) => `${article.title}`.toLowerCase().includes(searchQuery.toLowerCase())) : articles;
 
   return (
-    <div>
-      <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+    <div className="h-[100%] bg-zinc-200 py-8 px-10">
+      <div className="flex items-center justify-around">
+        <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+        <Author />
+      </div>
       <Main articles={searchedArticle} />
     </div>
   );

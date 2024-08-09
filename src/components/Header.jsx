@@ -1,14 +1,10 @@
 import SearchInput from './SearchInput';
-import { FaSearch } from 'react-icons/fa';
 
 const Header = ({ searchQuery, setSearchQuery }) => {
   return (
-    <div>
-      <h1>Search</h1>
-
-      <div>
-        <SearchInput searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      </div>
+    <div className="w-full">
+      <h1 className="text-4xl font-bold mb-10">Search</h1>
+      <SearchInput searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
     </div>
   );
 };
