@@ -6,7 +6,7 @@ const Main = ({ articles }) => {
   return (
     <div>
       <p>
-        <strong>{articles.length} articles</strong> were found
+        <strong>{articles.length} posts</strong> were found
       </p>
       {articles.map((article, i) => (
         <Article article={article} key={i} />
