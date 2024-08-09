@@ -1,6 +1,6 @@
 import Article from './Article';
 
-const Main = ({ articles }) => {
+const Main = ({ articles, searchQuery }) => {
   if (articles.length === 0) return <h1>No Article found...</h1>;
 
   return (
@@ -9,7 +9,7 @@ const Main = ({ articles }) => {
         <strong>{articles.length} posts</strong> were found
       </p>
       {articles.map((article, i) => (
-        <Article article={article} key={i} />
+        <Article article={article} key={i} searchQuery={searchQuery} />
       ))}
     </div>
   );
