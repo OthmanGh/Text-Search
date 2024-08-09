@@ -17,7 +17,7 @@ const App = () => {
         <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         <Author />
       </div>
-      <Main articles={searchedArticle} />
+      <Main articles={searchedArticle} searchQuery={searchQuery} />
     </div>
   );
 };
